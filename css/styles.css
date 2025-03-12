@@ -1,0 +1,531 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+       font-size: 20px;
+       scroll-behavior: smooth;
+}
+body {
+	font-family: "Lora", serif;
+       margin: 50px auto;
+       color: #000;
+       line-height: 1.5;
+       background: rgb(229,228,226);
+}
+
+
+
+/* Navbar Styles*/
+
+nav.navbar {
+	      padding: 20px; /*Creates space around the navbar*/
+	      background-color: #f4becf !important; /*Sets the background color*/
+}
+
+nav.navbar .navbar-nav { /*put all the links together*/
+	  padding-top: 5px;
+	padding-left: 20px;
+}
+
+nav.navbar .navbar-nav a.nav-link {
+	   padding: 22px 20px 8px 20px; /*space around link*/
+	   color: #8c2d55; /*change color*/
+	   text-align: left; /*text to the left*/
+	   font-size: 1rem; /*font size*/
+}
+nav.navbar .navbar-nav a.nav-link:hover {
+	   color: #8c2d55; /*change the color of the links*/
+}
+
+nav.navbar .navbar-nav .active a.nav-link {
+	   font-weight: bold;
+	    color: #8c2d55;
+	    background: transparent; /*backgroung color*/
+	    border-bottom: 4px solid #a30065;  /*change the color of the boder link*/
+}
+nav.navbar a.navbar-brand {
+	color: #353535;
+}
+
+/*serach form style*/
+
+form.form-inline {
+	  width: 32%; /*sets the web bar*/
+}
+
+
+form.form-inline input[type=search] {
+	border-radius: 0;
+	width: 62%;
+	font-size: 0.85rem;
+	border: 1px solid #353535;
+	margin: 0;
+	background: transparent;
+	max-width: 250px;
+	padding: 15px; /*creates space inside search box, one munber - the same number for each side*/
+	color: #353535;
+}
+ 
+form.form-inline input[type=search]::placeholder {
+	   color: #353535;
+}
+
+form.form-inline button[type=submit] {
+	border: 1px solid #353535;
+	color: #353535;
+	width: 30%;
+	border-radius: 0;
+	padding: 8px 0 7px 0; /*create space inside box, top right bottom left*/
+	font-size: 0.85rem;
+	margin-left: -6px;
+	max-width: 100px;
+}
+
+form.form-inline button.btn:hover {
+	background: transparent;
+	color: #a30065; /*change the color of the search*/
+}
+
+
+
+/*Text Styles*/
+
+       h1 {
+       font-size: 2.5rem;
+       font-variant: normal;
+       }
+    
+       h2 {
+       font-size: 1.5rem;
+       }
+     
+       h3 {
+       font-size: 1.25rem;
+       }
+h1, h2, h3 {
+        color: #8c2d55;
+        margin: 1rem 0 1rem 0;
+}
+
+p {
+   
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+ul li {
+       font-size: 0.95rem;
+       margin: 0 0 0.9rem 0;
+      
+}
+
+.bold {
+       font-weight: bold;
+}
+ 
+.italic {
+         font-style: italic;
+}
+
+.cColour {
+        color: #8c2d55;
+}
+/*list stles*/
+ol.makeup {
+	list-style-type: square;
+}
+
+ul li.listimage {
+	background: url("../images/heart.jpg") no-repeat left; /*creates a background image for the heart logo*/
+	padding-left: 35px;
+	list-style: none;
+}
+
+
+
+/*Link Styles*/
+a:link, a:active, a:visited {
+         color: #8c2d55;
+         text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+font-weight: bold;
+}
+
+/*Generic*/
+
+.backgroundC {
+        background: rgb(237,216,232)
+}
+
+.left {
+      float: left;
+      margin: 0 1rem 1rem 0;
+}
+
+.right {
+       float: right;
+       margin: 0 0 1rem 1rem;
+}
+
+ul.women {
+	margin-top: 80px;
+}
+
+ul.men {
+	margin-top: 80px;
+}
+
+ul.girl {
+	margin-top: 80px;
+}
+
+ul.boy {
+	margin-top: 70px;
+}
+/*Image Style*/
+ 
+
+img,video {  /*images are fixed size usually, this resizes to correct the layout*/
+          width: 100%;   /*this means the % of the avaible px, neended to be responsive */
+          height: auto;   /*height resize with width, so the images doesn't dishort */
+          margin-bottom:1rem;
+}
+
+#carouselExampleIndicators1 img {
+          max-width: 100%;
+          height: auto;
+
+}
+
+section img.dior {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	border: 5px red solid;
+}
+/*video style*/
+#diorvid {
+	border: 5px #8d2c55 solid;
+	margin-bottom: 1rem;
+}
+#outfitwomen {
+	
+}
+/*Table Style*/
+ 
+
+table {
+        width: 100%; /*Sets the table width*/
+        text-align: center;
+        border-collapse: collapse;
+        margin-top: 1rem; /*Creates space above the table*/
+	    margin-bottom: 1rem;
+}
+
+caption {
+         font-size: 1.5rem;
+         text-align: left;
+         font-weight: bold;
+         padding: 1rem 0;
+}
+
+th /*Formats the table header*/
+{
+      padding: 15px 10px 10px 10px; /*spacing inside the text*/
+      font-size: 1rem;
+      border-bottom: 2px solid #8d2c55; /*adds a solid 2px black border to the bottom of the header*/
+      text-align: center;
+	  font-weight: bold;
+	  color: #000;
+}
+
+td /*formats the table cells*/
+{
+    padding: 10px; /*only value means that it will be the same for top,right,bottom,left*/
+    border-bottom: 1px solid #8d2c55;
+	font-size: 0.9rem;
+	color: #000;
+	text-align: center; /*put the text in the center*/
+}
+
+table tr:nth-of-type(even) {
+	background-color:rgb(215,215,215);
+}
+
+table tr:nth-of-type(even):hover  {
+	background-color:#f4becf;
+	cursor: pointer;
+}
+
+table tr:nth-of-type(odd) {
+	background-color:#f4becf;
+}
+
+table tr:nth-of-type(odd) :hover {
+	background-color:rgb(215,215,215);
+	cursor:pointer;
+}
+
+/*Fotter Style*/
+footer {
+	width:100%;
+}
+footer h2 {}
+.footerL {
+	float: left;
+	padding:0;
+	border-right: 1px solid #8c2d55; /*creates solid pink border in the end of the page*/
+}
+.footerR {
+	float: right;
+	text-align: right; /*put the text on the right side of the page*/
+	padding: 0;
+}
+
+.footerR p.linked {
+ background: url("../images/linkedin.png") no-repeat right;
+	/*sets a backgroung images fpr example linkedin picture*/
+	padding-right: 30px;
+}
+
+/*comment form style*/
+
+#frmComment {
+	width: 90%;
+	margin: 30px auto;
+}
+
+#frmComment label {
+	float: left;
+	width: 100%;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+#frmComment label span {
+	float: left;
+	width: 30%;
+	text-align: right;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+
+#frmComment label:hover span {
+	color: #8d2c55;
+}
+
+#frmComment input {
+	float: left;
+	width: 50%;
+	border: 1px solid #999;
+	box-shadow: 0px 5px 5px #8d2c55;
+	margin: 10px 0 0 20px;
+	padding: 20px 10px;
+	height: 15px;
+}
+
+#frmComment input:hover,#frmComment textarea:hover {
+	box-shadow: 5px 5px 8px #000000;
+}
+
+#frmComment textarea {
+	float: left;
+	width: 51%;
+	margin: 8px 0 0 20px;
+	border: solid 1px #8d2c55;
+	box-shadow: 2px 8px 8px #e3e3e3;
+	padding: 10px 0 0 5px;
+}
+
+select{
+	width: 50%;
+	padding: 12px 10px 10px;
+	margin: 18px 0 0 20px;
+	border: 1px solid #8d2c55;
+	color: #8d2c55;
+	font-size:20px;
+}
+
+#frmComment input[type=submit] {
+	padding: 12px 2px; /*change the location of the button*/
+	text-align: center;
+	width: 240px;
+	float: left;
+	color: #8d2c55;
+	background: #FFFFFF;
+	border: 1px solid #8d2c55;
+	margin: 0px 0 0 33%; /* move the button to the sides,the % more - rigth, less - left */
+	border-radius: 0px; /*change the shape of the button*/
+	cursor: pointer;
+	height: 45%;
+}
+
+
+@media screen and (max-width: 992px) {
+	
+	/* media screen Apllied styles for the responsive design to the screen that goes under 992px for example phones*/
+	
+	nav.navbar .navbar-nav {
+		padding-left: 0;
+	}
+	
+	nav.navbar .navbar-nav a.nav-link {
+		padding: 8px 20px 8px 0;
+		width: 50%;
+	}
+	
+	form.form-inline {
+		width: 100%;
+	}
+	
+	form.form-inline input[type=search] {
+		width: 90%;
+	}
+	
+	form.form-inline button[type=submit] {
+		display: none; /*hides the GO button in the search menu under 992px*/
+		width: 0;
+	}
+	
+	.footerL {
+		border-right: none;
+		border-bottom: 1px solid #999;
+		padding-left: 1rem;
+		
+	}
+	.footerR {
+		text-align: left;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+	}
+	.footerR p.linked {
+		background: url("../images/linkedin.png") no-repeat 75px 0;
+		padding-right: 30px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	table,thead,tbody,th,td,tr,caption {
+		display: block;
+	}
+	
+	thead tr{ 
+	display:none;
+	}
+	
+	table td{
+		border:none;
+		position: relative;
+		text-align:right;
+		font-size: 0.9rem;
+		border-bottom: 2px solid white;
+	}
+	td:before{
+		position: absolute;
+		top:9px;
+		left: 5px;
+		width:55%;
+		font-weight:bold;
+		white-space: nowrap;
+		text-align: left;
+		font-size: 0.9rem;
+	}
+	
+	td:nth-of-type(4) {
+		border-bottom: 4px solid white;
+		}
+/* add the row labels*/
+	
+	td:nth-of-type(1):before {
+		content:"Name";
+	}
+	
+	td:nth-of-type(2):before {
+		content:"Top";
+	}
+	
+	td:nth-of-type(3):before {
+		content:"Heart";
+	}
+	
+	td:nth-of-type(4):before {
+		content:"Base";
+	}
+}
+
+/* Styles for the Image1 */
+.photo-container {
+	margin-top: 10px; /* space on the top of the picture */
+	text-align: left; 
+}
+
+#missdior {
+	width: 50%;
+	height:auto;
+}
+
+/* Styles for the Image2 */
+.photo-container {
+	margin-top: 10px; /* space on the top of the picture */
+	text-align: left; 
+}
+
+#sauvage {
+	width: 50%;
+	height:auto;
+}
+
+/* Styles for the Image3 */
+.photo-container {
+	margin-top: 10px; /* space on the top of the picture */
+	text-align: left; 
+}
+
+#jadore {
+	width: 50%;
+	height:auto;
+}
+
+.highlighters {
+	
+	width: 300px;
+	height: auto;
+	border: 5px #8d2c55 solid;
+}
+
+.blush {
+	
+	width: 300px;
+	height: auto;
+	border: 5px #8d2c55 solid;
+}
+
+.mascara {
+	
+	width: 250px;
+	height: auto;
+	border: 5px #8d2c55 solid;
+}
+
+.lips {
+	
+	width: 300px;
+	height: auto;
+	border: 5px #8d2c55 solid;
+}
+
+.foundation {
+	
+	width: 300px;
+	height: auto;
+	border: 5px #8d2c55 solid;
+}
+
+
+
