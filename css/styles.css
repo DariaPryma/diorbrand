@@ -286,7 +286,7 @@ footer h2 {}
 }
 
 .footerR p.linkedin {
- background: url("../images/logo50") no-repeat right;
+ background: url("../images/logo50.png") no-repeat right;
 	/*sets a backgroung images for example linkedin picture*/
 	padding-right: 30px;
 }
@@ -405,7 +405,7 @@ select{
 		padding-left: 1rem;
 	}
 	.footerR p.linked {
-		background: url("../images/linkedin.png") no-repeat 75px 0;
+		background: url("../images/logo50.png") no-repeat 75px 0;
 		padding-right: 30px;
 	}
 }
