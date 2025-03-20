@@ -285,9 +285,9 @@ footer h2 {}
 	padding: 0;
 }
 
-.footerR p.linked {
- background: url("../images/linkedin.png") no-repeat right;
-	/*sets a backgroung images fpr example linkedin picture*/
+.footerR p.cdlogo {
+ background: url("../images/cdlogo1") no-repeat right;
+	/*sets a backgroung images for example linkedin picture*/
 	padding-right: 30px;
 }
 
