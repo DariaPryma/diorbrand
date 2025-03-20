@@ -286,7 +286,7 @@ footer h2 {}
 }
 
 .footerR p.cdlogo {
- background: url("../images/cdlogo1") no-repeat right;
+ background: url("../images/cdlogo") no-repeat right;
 	/*sets a backgroung images for example linkedin picture*/
 	padding-right: 30px;
 }
