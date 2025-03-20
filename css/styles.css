@@ -287,7 +287,7 @@ footer h2 {}
 
 .footerR p.cdlogo {
  background: url("../images/logo30clear.png") no-repeat right;
-	/*sets a backgroung images for example linkedin picture*/
+	/*sets a backgroung images for dior logo picture*/
 	padding-right: 30px;
 }
 
@@ -406,7 +406,7 @@ select{
 	}
 	.footerR p.linked {
 		background: url("../images/logo30clear.png") no-repeat 110px 0;
-		padding-right: 80px;
+		padding-right: 30px;
 	}
 }
 
