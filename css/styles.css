@@ -406,7 +406,7 @@ select{
 	}
 	.footerR p.linked {
 		background: url("../images/logo30clear.png") no-repeat 110px 0;
-		padding-right: 30px;
+		padding-right: 80px;
 	}
 }
 
